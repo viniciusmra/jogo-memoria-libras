@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  width: 315px;
-  height: 450px;
+  width: 283px;
+  height: 405px;
   margin: 0px;
   display: flex;
   justify-content: left;
@@ -17,8 +17,8 @@ const Border = styled.div`
   position: absolute;
   top: 32px;
   left: 32px;
-  width: 241px;
-  height: 376px;
+  width: 283px;
+  height: 405px;
   border: 8px solid #fff;
   z-index: 1;
   border-radius: 8px;
@@ -31,8 +31,8 @@ const Gif = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 315px;
-  height: 450px;
+  width: 252px;
+  height: 360px;
   display: ${(props) => (props.show ? "block" : "none")};
   opacity: ${(props) => (props.isMatched ? 0.3 : props.isFlipped ? 1 : 0)};
   transition: opacity 1.0s ease-in-out;
@@ -57,7 +57,7 @@ const HoverDiv = ({ index, card, handleClick }) => {
 
   return (
     <Container isFlipped={card.isFlipped} isMatched={card.isMatched} onClick={() => handleClick(card)}>
-      <Gif show={true} isFlipped={!card.isFlipped} isMatched={false} src={index+1 + ".png"} alt="GIF" />
+      <Gif show={true} isFlipped={!card.isFlipped} isMatched={false} src={index + 1 + ".png"} alt="GIF" />
       <Gif show={true} isFlipped={card.isFlipped} isMatched={card.isMatched} src={card.gif} alt="GIF" />
     </Container>
   );

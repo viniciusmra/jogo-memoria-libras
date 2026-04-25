@@ -19,8 +19,8 @@ const Container = styled.div`
 
 const ContainerFlex = styled.div`
   display: flex;
-  gap: 24px;
-  width: 80%;
+  gap: 16px;
+  width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -31,59 +31,87 @@ function App() {
   const initialCards = [
     {
       id: 0,
-      value: "abril",
+      value: "1",
       isFlipped: false,
       isMatched: false,
-      gif: "abril.gif",
+      gif: "1.gif",
     },
     {
       id: 1,
-      value: "abril",
+      value: "1",
       isFlipped: false,
       isMatched: false,
-      gif: "labril.gif",
+      gif: "1.gif",
     },
     {
       id: 2,
-      value: "junho",
+      value: "2",
       isFlipped: false,
       isMatched: false,
-      gif: "ljunho.gif",
+      gif: "2.gif",
     },
     {
       id: 3,
-      value: "junho",
+      value: "2",
       isFlipped: false,
       isMatched: false,
-      gif: "wjunho.gif",
+      gif: "2.gif",
     },
     {
       id: 4,
-      value: "dezembro",
+      value: "3",
       isFlipped: false,
       isMatched: false,
-      gif: "wdezembro.gif",
+      gif: "3.gif",
     },
     {
       id: 5,
-      value: "dezembro",
+      value: "3",
       isFlipped: false,
       isMatched: false,
-      gif: "dezembro.gif",
+      gif: "3.gif",
     },
     {
       id: 6,
-      value: "setembro",
+      value: "4",
       isFlipped: false,
       isMatched: false,
-      gif: "lsetembro.gif",
+      gif: "4.gif",
     },
     {
       id: 7,
-      value: "setembro",
+      value: "4",
       isFlipped: false,
       isMatched: false,
-      gif: "setembro.gif",
+      gif: "4.gif",
+    },
+    {
+      id: 8,
+      value: "5",
+      isFlipped: false,
+      isMatched: false,
+      gif: "5.gif",
+    },
+    {
+      id: 9,
+      value: "5",
+      isFlipped: false,
+      isMatched: false,
+      gif: "5.gif",
+    },
+    {
+      id: 10,
+      value: "6",
+      isFlipped: false,
+      isMatched: false,
+      gif: "6.gif",
+    },
+    {
+      id: 11,
+      value: "6",
+      isFlipped: false,
+      isMatched: false,
+      gif: "6.gif",
     },
   ];
   const shuffleArray = (array) => {
